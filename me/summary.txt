@@ -1,0 +1,79 @@
+Profile:
+Senior Software Engineer with 18 years of experience in software engineering and AI-enabled automation. Skilled in AI engineering and agentic workflow design, Python programming, hands-on prototyping with LLMs, system behavior analysis, and effective communication across teams. Built custom AI tooling and autonomous workflows that accelerated feature implementation, test generation, and code review, while supporting country tax ID generation, software licensing, and compliance discovery across 50+ countries. 
+
+Areas of Expertise:
+• AI Engineering	• Python	• Agentic Applications	• Software Engineering
+• Hands-On Experimentation	• Prototyping	• System Behaviour Analysis	• Communication Skills
+• Collaboration	• OOP	• Design Patterns	• REST APIs
+• Pydantic/Asyncio	• CrewAI / LangGraph	• C# .NET
+
+Accomplishments:
+•	Architected and deployed an autonomous AI-assisted development workflow using OpenAI and Anthropic Claude models to automate routine feature implementation, test generation, and code reviews, accelerating developer throughput and reducing repetitive tasks. 
+•	Built custom AI agents and tooling to automate country-specific tax ID generation and software licensing, enabling rapid multi-country deployments. 
+•	Designed and implemented a reflection-based dynamic compliance discovery system covering 50+ countries, simplifying coverage verification and reducing manual effort. 
+•	Integrated automated code-review agents and build-time analyzers to surface anti-patterns and prevent cross-module dependencies, improving early defect detection and build stability. 
+•	Resolved critical concurrency defects by refactoring trigger processors into self-recovering operations, improving invoice posting stability and reducing customer escalations. 
+•	Mentored team members and led knowledge-sharing on prompt engineering and AI collaboration; acted as informal technical lead to coordinate priorities, remove blockers, and maintain sprint momentum. 
+•	Implemented chunked online database migrations to safely transform millions of production rows with zero downtime for large customer databases. 
+
+Professional Experience:
+Wisetech Global, Sydney, NSW, Apr 2021 to Jun 2026	
+Senior Software Engineer
+•	Engineered an autonomous AI-assisted development workflow utilizing OpenAI and Anthropic Claude models to automate routine feature implementation, test generation, and code reviews, enhancing overall productivity. 
+•	Developed custom AI agents to streamline the generation of country-specific Tax IDs and software licenses, demonstrating rapid prototyping of agentic applications. 
+•	Integrated automated code review agents into the development pipeline to evaluate code quality and detect failure patterns early, improving defect detection rates. 
+•	Communicated insights and shared learnings through structured knowledge-sharing sessions, providing clear, data-backed explanations to support team-wide understanding of AI engineering practices. 
+•	Mentored lateral hires, interns, and work-study engineering students; reviewed technical progress, provided constructive feedback, and supported independent feature delivery. 
+•	Collaborated with non-technical stakeholders to communicate complex technical concepts, ensuring alignment on feature development and defect resolutions that enhance user experience. 
+•	Contributed to the jurisdiction-specific tax calculation engine by implementing transaction persistence via XSD serialization, reducing manual calculation overhead and supporting multi-country deployment. 
+•	Built a reflection-based architecture to dynamically discover and expose compliance data across 50+ countries, reducing manual effort to verify feature coverage. 
+•	Authored chunked post-upgrade database transformations to safely migrate millions of production rows with zero downtime for large customer databases. 
+•	Resolved critical concurrency defects and race conditions in the core data bus, refactoring trigger processors into self-recovering operations to reduce invoice posting errors and support tickets. 
+
+Memjet Australia, Sydney, NSW, Aug 2019 to Sep 2020	
+Software Engineer
+•	Engineered a high-fidelity C++ emulation framework that served as a prototyping and evaluation environment for system behavior, edge cases, and failure modes. 
+•	Optimized CI test automation by integrating Google Test into pipelines, enabling lightweight evaluation methods and accelerating regression cycles for improved defect detection. 
+•	Analyzed and resolved field and system-test defects, enhancing the stability of deployed printers and reducing customer issue turnaround time. 
+•	Designed and implemented an OEM Printer Controller UI using Apache Thrift, facilitating secure remote configuration and management. 
+
+Nokia Solutions, Bengalure, India, Feb 2014 to Jan 2019	
+Senior Software Engineer and Scrum master
+•	Led the architecture and development of the core Hardware Management Domain using C/C++, focusing on system behavior analysis and aligning cross-functional teams to meet project milestones. 
+•	Authored high- and low-level design specifications, employing structured analysis and evaluation methods to translate complex user stories into efficient algorithmic workflows. 
+•	Facilitated Scrum ceremonies to enhance team delivery metrics, removing blockers and ensuring effective communication with stakeholders through regular updates and product demonstrations. 
+•	Mentored new team members, providing constructive feedback to support their onboarding and professional development. 
+
+Motorola Solutions India Pvt Ltd., Bengaluru, India, Apr 2012 to Jan 2014	
+Software Engineer
+•	Engineered a reliable TCP transport layer, enhancing packet delivery stability for critical network applications through meticulous system behavior analysis. 
+•	Implemented Transport Layer Security (TLS) for signaling protocols, significantly improving user data privacy and meeting enterprise communication security standards. 
+•	Optimized SIP signaling and advanced call features, enabling low-latency communication modes while addressing reliability and security trade-offs. 
+
+Tech Mahindra Ltd., Bengaluru, India, Jun 2007 to Mar 2012	
+Senior Technical Associate
+•	Led full-SDLC feature development for Litespan core releases, focusing on advanced ADSL line card telemetry and statistics-gathering systems to enhance system performance. 
+•	Co-developed the Jumpgrade network tool using TCL/TK, facilitating seamless software and hardware migration while minimizing telemetry service disruptions through careful engineering trade-offs. 
+•	Spearheaded the creation of the GUI-driven Remote Software Tool (RST), automating TL1 command execution to streamline software upgrades across ring topologies, demonstrating strong software engineering and experimentation. 
+•	Enhanced the C-based firmware loader utility (SCULD) to support system software images, centralizing data management on local System Communication Unit cards, which improved reliability and efficiency. 
+•	Onboarded and trained cross-functional testing teams and new engineering hires, contributing to faster project ramp-up times through effective technical mentorship. 
+
+Education:
+Visveswaraya Technological University, Sep 2003 to Jun 2007	
+Bachelor of Engineering (Electronics & Communications), Bengaluru
+Graduated in 2007 
+
+Licenses & Certifications:
+Professional Scrum Master - I, Srum.org, May 2019	
+
+References:
+Kaustubh Pathak, Wisetech Global	
++61415194098
+Andrei Sarnavsky, Wisetech Global	
+sarnavsky@gmail.com
+
+Hobbies:
+Singing, Cooking, Recreational Sport 
+
+Languages:
+English, Kannada, Hindi
