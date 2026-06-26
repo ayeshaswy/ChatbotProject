@@ -22,5 +22,6 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run:
+          git remote remove space || true
           git remote add space https://.:$HF_TOKEN@huggingface.co/spaces/yeshaswy/ChatWithMeChatbot
           git push --force space main
