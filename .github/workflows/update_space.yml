@@ -12,8 +12,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Clone the repository using raw bash (Zero Node.js dependency)
-      - name: Fetch Codebase via Native Git
-        run:
-          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com/ayeshaswy/ChatbotProject.git .
-
+      # Step 1: Safe, warning-free, authentication-insulated checkout
+      - name: Fetch Codebase Natively
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 1
