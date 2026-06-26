@@ -8,15 +8,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Check out repository code using the Node 24 native action
-      - name: Checkout Code
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-          lfs: true
+      # Step 1: Clone the repository using raw bash (Zero Node.js dependency)
+      - name: Fetch Codebase via Native Git
+        run: |
+          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com/ayeshaswy/ChatbotProject.git .
 
-      # Step 2: Push code directly to Hugging Face using clean Git commands
-      - name: Push to Hugging Face Hub
+      # Step 2: Push directly to Hugging Face using clean Git mirroring
+      - name: Mirror to Hugging Face Hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run:
