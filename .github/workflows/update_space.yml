@@ -9,11 +9,11 @@ jobs:
     steps:
       # 1. Use the stable Node 24 native checkout version
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       # 2. Drop setup-python entirely. Use the official Node 24 native UV action
       - name: Set up uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v5.2.1
         with:
           python-version: '3.11' # Matches your project runtime
 
