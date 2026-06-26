@@ -4,13 +4,17 @@ on:
   push:
     branches: [main]
 
+# CRITICAL FIX: Grants the raw Git shell script authorization to read your code block
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       # Step 1: Clone the repository using raw bash (Zero Node.js dependency)
       - name: Fetch Codebase via Native Git
-        run: |
+        run:
           git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com/ayeshaswy/ChatbotProject.git .
 
       # Step 2: Push directly to Hugging Face using clean Git mirroring
