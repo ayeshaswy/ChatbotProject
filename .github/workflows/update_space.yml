@@ -29,4 +29,3 @@ jobs:
 
       - name: Deploy to Spaces
         run: gradio deploy
-	  
