@@ -15,3 +15,18 @@ jobs:
       # Step 1: Safe, warning-free, authentication-insulated checkout
       - name: Fetch Codebase Natively
         uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install Gradio
+        run: python -m pip install gradio
+
+      - name: Log in to Hugging Face
+        run: python -c 'import huggingface_hub; huggingface_hub.login(token="${{ secrets.HF_TOKEN }}")'
+
+      - name: Deploy to Spaces
+        run: gradio deploy
+	  
