@@ -10,7 +10,7 @@ jobs:
     steps:
       # Step 1: Check out repository code using the Node 24 native action
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           lfs: true
