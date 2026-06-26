@@ -17,11 +17,3 @@ jobs:
         run:
           git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com/ayeshaswy/ChatbotProject.git .
 
-      # Step 2: Push directly to Hugging Face using clean Git mirroring
-      - name: Mirror to Hugging Face Hub
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run:
-          git remote remove space || true
-          git remote add space https://.:$HF_TOKEN@huggingface.co/spaces/yeshaswy/ChatWithMeChatbot
-          git push --force space main
