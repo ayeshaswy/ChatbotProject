@@ -1,28 +1,28 @@
-name: Run Python script
-
+name: Sync to Hugging Face Spaces
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v5
+      # 1. Use the stable Node 24 native checkout version
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.11'
+      # 2. Drop setup-python entirely. Use the official Node 24 native UV action
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: '3.11' # Matches your project runtime
 
-    - name: Install Gradio
-      run: python -m pip install gradio
+      # 3. Synchronise your project dependencies effortlessly
+      - name: Install Dependencies
+        run: uv sync
 
-    - name: Log in to Hugging Face
-      run: python -c 'import huggingface_hub; huggingface_hub.login(token="${{ secrets.hf_token }}")'
-
-    - name: Deploy to Spaces
-      run: gradio deploy
+      # 4. Your original Gradio / Spaces push logic continues here...
+      - name: Push to Spaces
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: gradio deploy --non-interactive
