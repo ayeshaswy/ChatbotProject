@@ -15,7 +15,7 @@ chardet==7.4.3
 checks==0.2
 contextlib2==21.6.0
 cryptography==49.0.0
-ctypes_snappy>=1.2
+ctypes_snappy==1.2
 curio==1.6
 cycler==0.12.1
 Cython==3.2.6
