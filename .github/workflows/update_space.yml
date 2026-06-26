@@ -1,4 +1,5 @@
-name: Sync to Hugging Face Spaces
+name: Push to Hugging Face Spaces
+
 on:
   push:
     branches: [main]
@@ -7,22 +8,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Use the stable Node 24 native checkout version
-      - name: Checkout code
-        uses: actions/checkout@v4.2.2
-
-      # 2. Drop setup-python entirely. Use the official Node 24 native UV action
-      - name: Set up uv
-        uses: astral-sh/setup-uv@v5.2.1
+      # Step 1: Check out repository code using the Node 24 native action
+      - name: Checkout Code
+        uses: actions/checkout@v4
         with:
-          python-version: '3.11' # Matches your project runtime
+          fetch-depth: 0
+          lfs: true
 
-      # 3. Synchronise your project dependencies effortlessly
-      - name: Install Dependencies
-        run: uv sync
-
-      # 4. Your original Gradio / Spaces push logic continues here...
-      - name: Push to Spaces
+      # Step 2: Push code directly to Hugging Face using clean Git commands
+      - name: Push to Hugging Face Hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: gradio deploy --non-interactive
+        run:
+          git remote add space https://.:$HF_TOKEN@huggingface.co/spaces/yeshaswy/ChatWithMeChatbot
+          git push --force space main
